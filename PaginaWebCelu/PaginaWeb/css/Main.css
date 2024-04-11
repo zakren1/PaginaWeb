@@ -1,12 +1,12 @@
 /*CAROUSEL*/
 .carousel-item {
     min-height: 400px;
-    max-height: 540px;
+    max-height: 520px;
 }
 
 .carousel-item img {
     min-height: 400px;
-    max-height: 540px;
+    max-height: 520px;
     width: auto;
 }
 
@@ -43,11 +43,11 @@
 @media(max-width: 767px) {
 
     .carousel-item {
-        min-height: 500px;
+        min-height: 300px;
     }
 
     .carousel-item img {
-        height: 500px;
+        height: 300px;
     }
 
     .carousel-caption {
