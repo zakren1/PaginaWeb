@@ -7,11 +7,13 @@
     <title>NOMBRE PAGINA</title>
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/Main.css">
+    <link rel="stylesheet" href="../css/Producto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="../js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
+    <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -19,8 +21,9 @@
                     class="d-inline-block align-text-top">
                 NombreTienda
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -36,7 +39,7 @@
                             <li><a class="dropdown-item" href="../html/xiaomi.html">Xiaomi</a></li>
                         </ul>
                     </li>
-                    <form class="d-flex">
+                    <form class="d-flex" >
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
@@ -71,116 +74,59 @@
             </div>
         </div>
     </nav>
+    <!--FIN NAVBAR-->
 
-
-    <div class="container" style="margin-bottom: 30px;">
-        <h3 style="margin-top: 30px;">Productos de Apple</h3>
-        <div class="row">
-
-            <div class="col-sm-3 mt-3">
-                <div class="card" style="width: 300px; margin-right: 10px;">
-                    <img class="card-img-top" src="../img/iphone15pro.jpg" alt="Iphone 15 Pro Max">
-                    <div class="card-body">
-                        <h3 class="card-title">Iphone 15 Pro Max</h3>
-                        <h5 class="card-text">Precio : $1.380.000</h5>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        <a href="../html/pa-iphone15pro.html" class="btn btn-success">Ver detalles</a>
+    <!--PRODUCTO-->
+    <section id="product-page">
+        <div class="product-details">
+            <!--Imagen-->
+            <div class="product-img">
+                <img src="../img/iphone15pro.jpg"/>
+            </div>
+            <!--Texto-->
+            <div class="product-text">
+                <!--Detalles-->
+                <span class="product-category">Apple</span>
+                <h3>Iphone SE</h3>
+                <span class="product-price">$200.000</span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis laboriosam vitae ab aspernatur qui facere a commodi cupiditate praesentium. Aliquam, voluptatem est debitis consequuntur ex autem exercitationem quas dolorem alias?
+                    <br/>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores rem similique recusandae explicabo vero consectetur repudiandae exercitationem fugiat, cum aliquam sed necessitatibus, modi minus quia! Adipisci illum modi dolore nemo.
+                </p>
+                <!--size-->
+                <div class="product-color-container">
+                    <strong>Seleccione color:</strong>
+                    <div class="product-color">
+                        <!--xl-->
+                        <input type="checkbox" class="c-checkbox" id="c-black">
+                        <label for="c-black" class="c-label">Negro</label>
+                        <!--Small-->
+                        <input type="checkbox" class="c-checkbox" id="c-white">
+                        <label for="c-white" class="c-label">Blanco</label>
+                        
                     </div>
                 </div>
-            </div>
-
-            <div class="col-sm-3 mt-3">
-                <div class="card" style="width: 300px; margin-right: 10px;">
-                    <img class="card-img-top" src="../img/iphone15.jpg" alt="Iphone 15 Pro Max">
-                    <div class="card-body">
-                        <h3 class="card-title">Iphone 15</h3>
-                        <h5 class="card-text">Precio : $930.000</h5>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        <a href="../html/pa-iphone15.html" class="btn btn-success">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-3 mt-3">
-                <div class="card" style="width: 300px; margin-right: 10px;">
-                    <img class="card-img-top" src="../img/iphone14pro.jpg" alt="Iphone 15 Pro Max">
-                    <div class="card-body">
-                        <h3 class="card-title">Iphone 14 Pro Max</h3>
-                        <h5 class="card-text">Precio : $870.000</h5>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        <a href="../html/pa-iphone14pro.html" class="btn btn-success">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-sm-3 mt-3">
-                <div class="card" style="width: 300px; margin-right: 10px;">
-                    <img class="card-img-top" src="../img/iphone14.jpg" alt="Iphone 15 Pro Max">
-                    <div class="card-body">
-                        <h3 class="card-title">Iphone 14</h3>
-                        <h5 class="card-text">Precio : $770.000</h5>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        <a href="../html/pa-iphone14.html" class="btn btn-success">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     
-        <div class="row">
-
-            <div class="col-sm-3 mt-3">
-                <div class="card" style="width: 300px; margin-right: 10px;">
-                    <img class="card-img-top" src="../img/iphone13.jpg" alt="Iphone 15 Pro Max">
-                    <div class="card-body">
-                        <h3 class="card-title">Iphone 13</h3>
-                        <h5 class="card-text">Precio : $630.000</h5>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        <a href="../html/pa-iphone13.html" class="btn btn-success">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-3 mt-3">
-                <div class="card" style="width: 300px; margin-right: 10px;">
-                    <img class="card-img-top" src="../img/iphone12.png" alt="Iphone 15 Pro Max">
-                    <div class="card-body">
-                        <h3 class="card-title">Iphone 12</h3>
-                        <h5 class="card-text">Precio : $580.000</h5>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        <a href="../html/pa-iphone12.html" class="btn btn-success">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-3 mt-3">
-                <div class="card" style="width: 300px; margin-right: 10px;">
-                    <img class="card-img-top" src="../img/iphone11.jpg" alt="Iphone 15 Pro Max">
-                    <div class="card-body">
-                        <h3 class="card-title">Iphone 11</h3>
-                        <h5 class="card-text">Precio : $400.000</h5>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        <a href="../html/pa-iphone11.html" class="btn btn-success">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-sm-3 mt-3">
-                <div class="card" style="width: 300px; margin-right: 10px;">
-                    <img class="card-img-top" src="../img/iphonese.jpg" alt="Iphone 15 Pro Max">
-                    <div class="card-body">
-                        <h3 class="card-title">Iphone SE</h3>
-                        <h5 class="card-text">Precio : $200.000</h5>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        <a href="../html/pa-iphonese.html" class="btn btn-success">Ver detalles</a>
-                    </div>
+                <!--btn-->
+                <div class="product-button">
+                    <a href="#" class="btn btn-primary">Agregar al carrito</a>
                 </div>
             </div>
         </div>
-
-    </div>
+    </section>
+    
+        <!--==Jquery===========================-->
+        <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"></script>
+    
+        <script>    
+          $('.c-checkbox').on('change', function() {
+                $('.c-checkbox').not(this).prop('checked', false);  
+            });
+        </script>
+    <!--FIN PRODUCTO-->
 
     <!--FOOTER-->
     <footer class = "bg-dark py-5">
@@ -271,7 +217,6 @@
         </div>
     </footer>
     <!--FIN FOOTER-->
-
 </body>
 
 </html>
