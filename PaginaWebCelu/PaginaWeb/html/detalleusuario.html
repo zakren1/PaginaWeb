@@ -1,114 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NOMBRE PAGINA</title>
     <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../css/Login.css">
     <link rel="stylesheet" href="../css/Main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
 
+    <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="../img/logotienda.png" alt="logotienda" width="40" height="30"
-                    class="d-inline-block align-text-top">
-                NombreTienda
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">Panel de Administrador</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Marcas
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="../html/iphone.html">Apple</a></li>
-                            <li><a class="dropdown-item" href="../html/samsung.html">Samsung</a></li>
-                            <li><a class="dropdown-item" href="../html/xiaomi.html">Xiaomi</a></li>
-                        </ul>
-                    </li>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                </ul>
-
-                <ul class="navbar-nav ml-auto">
-
-                    <!-- icono carro -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                class="bi bi-cart" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-                            </svg>
-                        </a>
+                        <a class="nav-link" href="index.html">Inicio</a>
                     </li>
-
-                    <!-- icono personacirculo -->
                     <li class="nav-item">
-                        <a class="nav-link" href="../html/InicioSesion.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                class="bi bi-person-circle" viewBox="0 0 16 16">
-                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                <path fill-rule="evenodd"
-                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                            </svg>
-                        </a>
+                        <a class="nav-link" href="listadousuarios.html">Usuarios</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pedidos</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container-fluid flexbox-margin-auto " style="margin-bottom: 20px;">
-        <div class="row;">
-            <div class="card">
-                <div class="card-body">
-                    <div class="formulario" style="align-items: center;">
-                        <h1 class="flexbox-margin-auto">Login</h1>
-                        <form action="">
-                            <div class="mb-3">
-                                <input type="email" placeholder="Correo Electronico" required>
-                                <i class='bx bxs-user'></i>
-                            </div>
+    
 
-                            <div class="mb-2">
-                                <input type="password" placeholder="Contraseña" required style="margin-top: 10px;">
-                                <i class='bx bxs-lock-alt'></i>
-                            </div>
-                            
-                            <button class="btn btn-primary" type="submit" style="margin-top: 10px;">
-                                <a href="index.html" style="text-decoration: none; color: white;">Iniciar Sesión</a>
-                            </button>
-
-                            <div class="mb-2"><a href="recuperarcontra.html">¿Olvidaste tu contraseña?</a></div>
-
-                            <div>
-                                <p>¿No tienes cuenta?<a href="RegistroUser.html">Registrarse</a></p>
-                            </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container mt-4 mb-4">
+        <h1 class="border-bottom pb-3">Detalles del usuario</h1>
+        <div class="container mt-4">
+          <h4>Nombre de usuario</h4>
+          <p>Pepito123</p>
+          <h4>Correo Electrónico</h4>
+          <p>pepito@gmail.com</p>
+          <h4>Numero telefonico</h4>
+          <p>+56912345678</p>
+        </div>
+        <div class="mt-3">
+            <a href="listadousuarios.html">
+                <button class="btn btn-dark ml-4">Volver</button>
+            </a>
         </div>
     </div>
 
-    <!--FOOTER-->
-    <footer class = "bg-dark py-5">
+
+      <!--FOOTER-->
+      <footer class = "bg-dark py-5">
         <div class = "container">
             <div class = "row text-white g-4">
                 <div class = "col-md-6 col-lg-3">
@@ -196,9 +151,6 @@
         </div>
     </footer>
     <!--FIN FOOTER-->
-    
-    </form>
 
 </body>
 
-</html>
