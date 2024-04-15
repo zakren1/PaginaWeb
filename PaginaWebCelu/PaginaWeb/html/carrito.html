@@ -7,6 +7,7 @@
     <title>NOMBRE PAGINA</title>
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/Main.css">
+    <link rel="stylesheet" href="../css/Carrito.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -53,7 +54,7 @@
 
                     <!-- icono carro -->
                     <li class="nav-item">
-                        <a class="nav-link" href="../html/carrito.html">
+                        <a class="nav-link" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                                 class="bi bi-cart" viewBox="0 0 16 16">
                                 <path
@@ -80,19 +81,72 @@
     </nav>
     <!--FIN NAVBAR-->
 
-    <div class="container" style="margin-bottom: 30px;">
-        <h1 class="border-bottom" style="margin-top: 30px;">¿Quiénes somos?</h1>
-        <h2 class="border-bottom" style="margin-top: 20px;" >NombreTienda</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus nesciunt doloribus dolore deserunt 
-            voluptate debitis molestiae distinctio voluptates molestias autem veritatis ea reiciendis iste, 
-            maxime commodi velit a eveniet laudantium?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque corporis laborum, ratione, repellendus 
-            voluptate voluptatum itaque officiis ipsam asperiores, et illum consectetur cupiditate facilis ut? 
-            Quidem voluptatum iure voluptate asperiores.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor assumenda a officia odio vel atque, 
-            quisquam animi obcaecati voluptatem ratione? Deleniti sequi illo, nihil odio facilis blanditiis eius 
-            ducimus voluptatum!</p>
+    <!--CARRITO-->
+    <div class="carrito-section">
+        <div class="card mt-4 mb-4">
+            <div class="row">
+                <div class="col-md-8 cart">
+                    <div class="title">
+                        <div class="row">
+                            <div class="col">
+                                <h4><b>Carrito de compras</b></h4>
+                            </div>
+                            <div class="col align-self-center text-right text-muted" style="text-align: end;">2 productos</div>
+                        </div>
+                    </div>
+                    <div class="row border-top border-bottom">
+                        <div class="row main align-items-center">
+                            <div class="col-2"><img class="img-fluid" src="../img/iphone15pro.jpg" alt=""></div>
+                            <div class="col">
+                                <div class="row text-muted">Apple</div>
+                                <div class="row">Iphone 15 Pro Max</div>
+                            </div>
+                            <div class="col">
+                                <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                            </div>
+                            <div class="col">&dollar; 1.380.000 <span class="close">&#10005;</span></div>
+                        </div>
+                    </div>
+                    <div class="row border-top border-bottom">
+                        <div class="row main align-items-center">
+                            <div class="col-2"><img class="img-fluid" src="../img/iphone12.png"></div>
+                            <div class="col">
+                                <div class="row text-muted">Apple</div>
+                                <div class="row">Iphone 12</div>
+                            </div>
+                            <div class="col">
+                                <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                            </div>
+                            <div class="col">&dollar; 580.000 <span class="close">&#10005;</span></div>
+                        </div>
+                    </div>
+                    <div class="back-to-shop"><a href="../html/index.html">&leftarrow;</a><span
+                            class="text-muted">Volver a inicio</span></div>
+                </div>
+                <div class="col-md-4 summary">
+                    <div>
+                        <h5><b>Resumen</b></h5>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col" style="padding-left:0;">PRODUCTOS</div>
+                        <div class="col text-right">&dollar; 1.960.000</div>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="padding-left:0;">ENVÍO</div>
+                        <div class="col text-right">&dollar; 5.990</div>
+                    </div>
+                    <div class="row" style="border-top: 1px solid rgba(0,0,0,.1);">
+                        <div class="col" style="margin-top: 2vh; padding-left: 0;">PRECIO TOTAL</div>
+                        <div class="col text-right" style="margin-top: 2vh;">&dollar; 1.965.990</div>
+                    </div>
+                    <a href="../html/index.html"><button class="btn">PAGAR</button></a>
+                </div>
+            </div>
+        </div>
+
     </div>
+    <!--FIN CARRITO-->
 
     <!--FOOTER-->
     <footer class="bg-dark py-5">
@@ -128,7 +182,7 @@
                             </a>
                         </li>
                         <li class="my-3">
-                            <a href="#" class="text-white text-decoration-none text-opacity-50">
+                            <a href="../html/about.html" class="text-white text-decoration-none text-opacity-50">
                                 <i class="fas fa-chevron-right me-1"></i> Acerca de
                             </a>
                         </li>
