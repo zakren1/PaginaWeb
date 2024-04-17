@@ -43,14 +43,16 @@
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin.html">Administracion</a>
+                    </li>
                 </ul>
 
                 <ul class="navbar-nav ml-auto">
-
                     <!-- icono carro -->
                     <li class="nav-item">
                         <a class="nav-link" href="../html/carrito.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-cart" viewBox="0 0 16 16">
                                 <path
                                     d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
@@ -72,74 +74,38 @@
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="#">Perfil</a></li>
                             <li><a class="dropdown-item" href="../html/pedidosuser.html">Mis pedidos</a></li>
-                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
                             <li><a class="dropdown-item" href="../html/InicioSesion.html">Iniciar sesión</a></li>
                             <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
                         </ul>
                     </li>
-
                 </ul>
             </div>
         </div>
     </nav>
     <!--FIN NAVBAR-->
 
-
-    <div class="container" style="margin-bottom: 30px;">
-        <h3 class="border-bottom" style="margin-top: 30px;">Productos de Xiaomi</h3>
-        <div class="row">
-
-            <div class="col-sm-3 mt-3">
-                <div class="card" style="width: 300px; margin-right: 10px;">
-                    <img class="card-img-top" src="../img/13t.webp" alt="Redmi 13t">
-                    <div class="card-body">
-                        <h3 class="card-title">Xiaomi Redmi 13T </h3>
-                        <h5 class="card-text">Precio : $560.000</h5>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        <a href="../html/px-13t.html" class="btn btn-success">Ver detalles</a>
+    <!-- Pedidos -->
+    <section>
+        <div class="container mt-3 mb-5">
+            <h2 class="border-bottom">Mis pedidos</h2>
+            <div class="row">
+                <!-- Primer pedido -->
+                <div class="col-md-12">
+                    <div class="order-card mb-3">
+                        <div class="card-header mt-2">
+                            <h4>Pedido #1</h4>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title mt-2">Estado: Entregado</h4>
+                            <h5 class="card-title mt-2">Producto: Iphone 15</h5>
+                            <a href="detallepedidouser.html" class="btn btn-primary mt-3">Ver Detalles</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-sm-3 mt-3">
-                <div class="card" style="width: 300px; margin-right: 10px;">
-                    <img class="card-img-top" src="../img/redmi13.webp" alt="Redmi 13">
-                    <div class="card-body">
-                        <h3 class="card-title">Xiaomi Redmi 13 </h3>
-                        <h5 class="card-text">Precio : $450.000</h5>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        <a href="../html/px-redmi13.html" class="btn btn-success">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-3 mt-3">
-                <div class="card" style="width: 300px; margin-right: 10px;">
-                    <img class="card-img-top" src="../img/pocof5.webp" alt="Poco f5">
-                    <div class="card-body">
-                        <h3 class="card-title">Xiaomi Poco F5</h3>
-                        <h5 class="card-text">Precio : $500.000</h5>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        <a href="../html/px-pocof5.html" class="btn btn-success">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-sm-3 mt-3">
-                <div class="card" style="width: 300px; margin-right: 10px;">
-                    <img class="card-img-top" src="../img/pocox6.jpg" alt="Poco x6">
-                    <div class="card-body">
-                        <h3 class="card-title">Xiaomi Poco X6</h3>
-                        <h5 class="card-text">Precio : $330.000</h5>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        <a href="../html/px-pocox6.html" class="btn btn-success">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
+    </section>
 
     <!--FOOTER-->
     <footer class="bg-dark py-5">
@@ -231,7 +197,6 @@
         </div>
     </footer>
     <!--FIN FOOTER-->
-
 </body>
 
 </html>
