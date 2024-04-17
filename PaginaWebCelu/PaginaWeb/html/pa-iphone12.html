@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOMBRE PAGINA</title>
+    <title>MobileMart</title>
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/Main.css">
     <link rel="stylesheet" href="../css/Producto.css">
@@ -19,7 +19,7 @@
             <a class="navbar-brand" href="index.html">
                 <img src="../img/logotienda.png" alt="logotienda" width="40" height="30"
                     class="d-inline-block align-text-top">
-                NombreTienda
+                    MobileMart
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -89,9 +89,22 @@
                 <span class="product-category">Apple</span>
                 <h3>Iphone 12</h3>
                 <span class="product-price">$580.000</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis laboriosam vitae ab aspernatur qui facere a commodi cupiditate praesentium. Aliquam, voluptatem est debitis consequuntur ex autem exercitationem quas dolorem alias?
+                <h4 style="margin-top: 20px;">Especificaciones</h4>
+                <p>Pantalla: OLED Super Retina XDR de 6.1 pulgadas
                     <br/>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores rem similique recusandae explicabo vero consectetur repudiandae exercitationem fugiat, cum aliquam sed necessitatibus, modi minus quia! Adipisci illum modi dolore nemo.
+                    Procesador: Apple A14 Bionic
+                    <br/>
+                    Memoria: RAM de 4 GB, almacenamiento base de 128 GB
+                    <br/>
+                    Cámara: Sistema de cámara dual con modo nocturno
+                    <br/>
+                    Batería: Capacidad estándar con carga rápida
+                    <br/>
+                    Conectividad: 5G avanzado, Wi-Fi 6, Bluetooth 5.0
+                    <br/>
+                    Diseño: Premium de vidrio y metal con certificación IP68
+                    <br/>
+                    Sistema Operativo: iOS 14
                 </p>
                 <!--size-->
                 <div class="product-color-container">
@@ -109,9 +122,27 @@
     
                 <!--btn-->
                 <div class="product-button">
-                    <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    <a href="../html/carrito.html" class="btn btn-primary">Agregar al carrito</a>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="comments-section" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4">Comentarios</h2>
+            <!-- Mostrar comentarios -->
+            <div id="comments-list"></div>
+            <!-- Nombre de usuario -->
+            <div id="username-display" class="mb-3"></div>
+            <!-- Formulario de comentarios -->
+            <form id="comment-form">
+                <div class="mb-3">
+                    <label for="comment-message" class="form-label">Mensaje:</label>
+                    <textarea class="form-control" id="comment-message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar comentario</button>
+            </form>
         </div>
     </section>
     
@@ -133,15 +164,15 @@
         <div class = "container">
             <div class = "row text-white g-4">
                 <div class = "col-md-6 col-lg-3">
-                    <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">NombreTienda</a>
-                    <p class = "text-white text-opacity-50 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia quisquam veniam odit cupiditate, ullam aut voluptas velit dolor ipsam?</p>
+                    <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">MobileMart</a>
+                    <p class = "text-white text-opacity-50 mt-3">Tienda en línea especializada en la venta de teléfonos celulares y dispositivos móviles.</p>
                 </div>
 
                 <div class = "col-md-6 col-lg-3">
                     <h5 class = "fw-light">Links</h5>
                     <ul class = "list-unstyled">
                         <li class = "my-3">
-                            <a href = "#" class = "text-white text-decoration-none text-opacity-50">
+                            <a href = "../html/index.html" class = "text-white text-decoration-none text-opacity-50">
                                 <i class = "fas fa-chevron-right me-1"></i> Inicio
                             </a>
                         </li>
@@ -183,7 +214,7 @@
                             <i class = "fas fa-envelope"></i>
                         </span>
                         <span class = "fw-light">
-                            nombretienda@gmail.com
+                            MobileMart@gmail.com
                         </span>
                     </div>
                     <div class = "d-flex justify-content-start align-items-start my-2 text-white text-opacity-50">
