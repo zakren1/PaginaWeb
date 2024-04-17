@@ -7,17 +7,20 @@
     <title>MobileMart</title>
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/Main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="../js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
+    <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="../img/logotienda.png" alt="logotienda" width="40" height="30"
                     class="d-inline-block align-text-top">
-                    MobileMart
+                MobileMart
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,21 +59,31 @@
                     </li>
 
                     <!-- icono personacirculo -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/InicioSesion.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-person-circle" viewBox="0 0 16 16">
                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                                 <path fill-rule="evenodd"
                                     d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
                             </svg>
                         </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Perfil</a></li>
+                            <li><a class="dropdown-item" href="#">Mis Pedidos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                        </ul>
                     </li>
 
                 </ul>
             </div>
         </div>
     </nav>
+    <!--FIN NAVBAR-->
 
 
     <div class="container" style="margin-bottom: 30px;">
@@ -130,85 +143,86 @@
     </div>
 
     <!--FOOTER-->
-    <footer class = "bg-dark py-5">
-        <div class = "container">
-            <div class = "row text-white g-4">
-                <div class = "col-md-6 col-lg-3">
-                    <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">MobileMart</a>
-                    <p class = "text-white text-opacity-50 mt-3">Tienda en línea especializada en la venta de teléfonos celulares y dispositivos móviles.</p>
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a class="text-uppercase text-decoration-none brand text-white" href="index.html">MobileMart</a>
+                    <p class="text-white text-opacity-50 mt-3">Tienda en línea especializada en la venta de teléfonos
+                        celulares y dispositivos móviles.</p>
                 </div>
 
-                <div class = "col-md-6 col-lg-3">
-                    <h5 class = "fw-light">Links</h5>
-                    <ul class = "list-unstyled">
-                        <li class = "my-3">
-                            <a href = "../html/index.html" class = "text-white text-decoration-none text-opacity-50">
-                                <i class = "fas fa-chevron-right me-1"></i> Inicio
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="../html/index.html" class="text-white text-decoration-none text-opacity-50">
+                                <i class="fas fa-chevron-right me-1"></i> Inicio
                             </a>
                         </li>
-                        <li class = "my-3">
-                            <a href = "../html/iphone.html" class = "text-white text-decoration-none text-opacity-50">
-                                <i class = "fas fa-chevron-right me-1"></i> Apple
+                        <li class="my-3">
+                            <a href="../html/iphone.html" class="text-white text-decoration-none text-opacity-50">
+                                <i class="fas fa-chevron-right me-1"></i> Apple
                             </a>
                         </li>
-                        <li class = "my-3">
-                            <a href = "../html/samsung.html" class = "text-white text-decoration-none text-opacity-50">
-                                <i class = "fas fa-chevron-right me-1"></i> Samsung
+                        <li class="my-3">
+                            <a href="../html/samsung.html" class="text-white text-decoration-none text-opacity-50">
+                                <i class="fas fa-chevron-right me-1"></i> Samsung
                             </a>
                         </li>
-                        <li class = "my-3">
-                            <a href = "../html/xiaomi.html" class = "text-white text-decoration-none text-opacity-50">
-                                <i class = "fas fa-chevron-right me-1"></i> Xiaomi
+                        <li class="my-3">
+                            <a href="../html/xiaomi.html" class="text-white text-decoration-none text-opacity-50">
+                                <i class="fas fa-chevron-right me-1"></i> Xiaomi
                             </a>
                         </li>
-                        <li class = "my-3">
-                            <a href = "../html/about.html" class = "text-white text-decoration-none text-opacity-50">
-                                <i class = "fas fa-chevron-right me-1"></i> Acerca de
+                        <li class="my-3">
+                            <a href="../html/about.html" class="text-white text-decoration-none text-opacity-50">
+                                <i class="fas fa-chevron-right me-1"></i> Acerca de
                             </a>
                         </li>
                     </ul>
                 </div>
 
-                <div class = "col-md-6 col-lg-3">
-                    <h5 class = "fw-light mb-3">Contacto</h5>
-                    <div class = "d-flex justify-content-start align-items-start my-2 text-white text-opacity-50">
-                        <span class = "me-3">
-                            <i class = "fas fa-map-marked-alt"></i>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Contacto</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-white text-opacity-50">
+                        <span class="me-3">
+                            <i class="fas fa-map-marked-alt"></i>
                         </span>
-                        <span class = "fw-light">
+                        <span class="fw-light">
                             Paicaví 3280, Concepción, Bío Bío
                         </span>
                     </div>
-                    <div class = "d-flex justify-content-start align-items-start my-2 text-white text-opacity-50">
-                        <span class = "me-3">
-                            <i class = "fas fa-envelope"></i>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-white text-opacity-50">
+                        <span class="me-3">
+                            <i class="fas fa-envelope"></i>
                         </span>
-                        <span class = "fw-light">
+                        <span class="fw-light">
                             MobileMart@gmail.com
                         </span>
                     </div>
-                    <div class = "d-flex justify-content-start align-items-start my-2 text-white text-opacity-50">
-                        <span class = "me-3">
-                            <i class = "fas fa-phone-alt"></i>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-white text-opacity-50">
+                        <span class="me-3">
+                            <i class="fas fa-phone-alt"></i>
                         </span>
-                        <span class = "fw-light">
+                        <span class="fw-light">
                             +569 7768 3148
                         </span>
                     </div>
                 </div>
 
-                <div class = "col-md-6 col-lg-3">
-                    <h5 class = "fw-light mb-3">Redes</h5>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Redes</h5>
                     <div>
-                        <ul class = "list-unstyled d-flex">
+                        <ul class="list-unstyled d-flex">
                             <li>
-                                <a href = "#" class = "text-white text-decoration-none text-opacity-50 fs-4 me-4">
-                                    <i class = "fab fa-facebook-f"></i>
+                                <a href="#" class="text-white text-decoration-none text-opacity-50 fs-4 me-4">
+                                    <i class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href = "#" class = "text-white text-decoration-none text-opacity-50 fs-4 me-4">
-                                    <i class = "fab fa-instagram"></i>
+                                <a href="#" class="text-white text-decoration-none text-opacity-50 fs-4 me-4">
+                                    <i class="fab fa-instagram"></i>
                                 </a>
                             </li>
                         </ul>
