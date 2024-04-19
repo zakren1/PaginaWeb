@@ -53,12 +53,21 @@
         </div>
     </nav>
 
-   <div class="container">
+    <div class="container">
         <h1 class="border-bottom mt-5">Agregar Nuevo Producto</h1>
         <form id="product-form" class="mt-4">
             <div class="mb-3">
                 <label for="product-name" class="form-label">Nombre del Producto:</label>
                 <input type="text" id="product-name" name="product-name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="product-brand" class="form-label">Marca:</label>
+                <select id="product-brand" name="product-brand" class="form-select" required>
+                    <option value="" disabled selected>Selecciona una marca</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Xiaomi">Xiaomi</option>
+                </select>
             </div>
             <div class="mb-3">
                 <label for="product-price" class="form-label">Precio:</label>
@@ -68,13 +77,12 @@
                 </div>
             </div>
             <div class="mb-3">
-                <label for="product-image" class="form-label">Imagen del Producto:</label>
-                <input type="file" id="product-image" name="product-image" class="form-control" required>
+                <label for="product-specifications" class="form-label">Especificaciones:</label>
+                <textarea id="product-specifications" name="product-specifications" class="form-control" rows="4" required></textarea>
             </div>
             <div class="mb-3">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#specificationsModal">
-                    Especificaciones
-                </button>
+                <label for="product-image" class="form-label">Imagen del Producto:</label>
+                <input type="file" id="product-image" name="product-image" class="form-control" required>
             </div>
             <div class="mb-3">
                 <a href="../html/editarproducto.html"><button type="submit" class="btn btn-primary">Agregar Producto</button></a>
