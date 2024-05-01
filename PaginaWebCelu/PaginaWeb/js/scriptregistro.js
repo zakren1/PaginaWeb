@@ -1,3 +1,66 @@
-function validarNombre(){
-    
-}
+document.addEventListener('DOMContentLoaded', function () {
+    // Obtener el formulario
+    const form = document.querySelector('.was-validated');
+
+    // Validacion del rut
+    const rutInput = form.querySelector('#rutusuario');
+    rutInput.addEventListener('input', function () {
+        if (!/^\d{1,8}-[\dkK]$/.test(rutInput.value)) {
+            rutInput.setCustomValidity('El formato del Rut es incorrecto. Ej: 12345678-9');
+        } else {
+            rutInput.setCustomValidity('');
+        }
+    });
+
+    // Validacion del usuario
+    const usernameInput = form.querySelector('#username');
+    usernameInput.addEventListener('input', function () {
+        if (usernameInput.value.length < 3) {
+            usernameInput.setCustomValidity('El nombre de usuario debe tener al menos 3 caracteres.');
+        } else {
+            usernameInput.setCustomValidity('');
+        }
+    });
+
+    // Validacion del email
+    const emailInput = form.querySelector('#email');
+    emailInput.addEventListener('input', function () {
+        if (emailInput.validity.typeMismatch) {
+            emailInput.setCustomValidity('El formato del correo electrónico es incorrecto. Ej: ejemplo@gmail.com');
+        } else {
+            emailInput.setCustomValidity('');
+        }
+    });
+
+    // Validacion del password
+    const passwordInput = form.querySelector('#password');
+    passwordInput.addEventListener('input', function () {
+        if (passwordInput.value.length < 5) {
+            passwordInput.setCustomValidity('La contraseña debe tener al menos 5 caracteres.');
+        } else {
+            passwordInput.setCustomValidity('');
+        }
+    });
+
+    // Validacion confimar passord
+    const confirmPasswordInput = form.querySelector('#confirm-password');
+    confirmPasswordInput.addEventListener('input', function () {
+        if (confirmPasswordInput.value !== passwordInput.value) {
+            confirmPasswordInput.setCustomValidity('Las contraseñas no coinciden.');
+        } else {
+            confirmPasswordInput.setCustomValidity('');
+        }
+    });
+
+    // Agregar un listener para el evento 'submit'
+    form.addEventListener('submit', function (event) {
+        // Verificar si el formulario es válido
+        if (!form.checkValidity()) {
+            event.preventDefault(); // Evitar que se envíe el formulario si no es válido
+            event.stopPropagation(); // Detener la propagación del evento
+        }
+
+        // Marcar los campos como válidos/inválidos
+        form.classList.add('was-validated');
+    }, false);
+});
