@@ -95,15 +95,17 @@
                 <div class="card-body">
                     <div class="formulario" style="align-items: center;">
                         <h1 class="flexbox-margin-auto">Login</h1>
-                        <form action="">
+                        <form action="" class="was-validated">
                             <div class="mb-3">
-                                <input type="email" placeholder="Correo Electronico" required>
-                                <i class='bx bxs-user'></i>
+                                <input type="email" class="form-control" placeholder="Correo Electronico" id="idemail" name="email" required>
+                                <div class="valid-feedback">Email válido</div>
+                                <div class="invalid-feedback">Ingrese un email válido</div>
                             </div>
 
                             <div class="mb-2">
-                                <input type="password" placeholder="Contraseña" required style="margin-top: 10px;">
-                                <i class='bx bxs-lock-alt'></i>
+                                <input type="password" class="form-control" placeholder="Contraseña" id="idpassword" name="password" required style="margin-top: 10px;">
+                                <div class="valid-feedback">Contraseña válida</div>
+                                <div class="invalid-feedback">Ingrese contraseña</div>
                             </div>
 
                             <button class="btn btn-primary" type="submit" style="margin-top: 10px;">
@@ -115,6 +117,7 @@
                             <div>
                                 <p>¿No tienes cuenta?<a href="RegistroUser.html">Registrarse</a></p>
                             </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -211,8 +214,6 @@
         </div>
     </footer>
     <!--FIN FOOTER-->
-
-    </form>
 
 </body>
 
