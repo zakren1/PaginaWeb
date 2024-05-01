@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('.was-validated');
 
     // Validacion del rut
-    const rutInput = form.querySelector('#rutusuario');
+    const rutInput = document.getElementById('rutusuario');
     rutInput.addEventListener('input', function () {
         if (!/^\d{1,8}-[\dkK]$/.test(rutInput.value)) {
             rutInput.setCustomValidity('El formato del Rut es incorrecto. Ej: 12345678-9');
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Validacion del usuario
-    const usernameInput = form.querySelector('#username');
+    const usernameInput = document.getElementById('username');
     usernameInput.addEventListener('input', function () {
         if (usernameInput.value.length < 3) {
             usernameInput.setCustomValidity('El nombre de usuario debe tener al menos 3 caracteres.');
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Validacion del email
-    const emailInput = form.querySelector('#email');
+    const emailInput = document.getElementById('email');
     emailInput.addEventListener('input', function () {
         if (emailInput.validity.typeMismatch) {
             emailInput.setCustomValidity('El formato del correo electrónico es incorrecto. Ej: ejemplo@gmail.com');
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Validacion del password
-    const passwordInput = form.querySelector('#password');
+    const passwordInput = document.getElementById('password');
     passwordInput.addEventListener('input', function () {
         if (passwordInput.value.length < 5) {
             passwordInput.setCustomValidity('La contraseña debe tener al menos 5 caracteres.');
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Validacion confimar passord
-    const confirmPasswordInput = form.querySelector('#confirm-password');
+    const confirmPasswordInput = document.getElementById('confirm-password');
     confirmPasswordInput.addEventListener('input', function () {
         if (confirmPasswordInput.value !== passwordInput.value) {
             confirmPasswordInput.setCustomValidity('Las contraseñas no coinciden.');
