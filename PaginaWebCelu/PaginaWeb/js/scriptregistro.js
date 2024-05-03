@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Obtener el formulario
-    const form = document.querySelector('.was-validated');
+    const form = document.getElementById('registro-form');
 
     // Validacion del rut
     const rutInput = document.getElementById('rutusuario');
