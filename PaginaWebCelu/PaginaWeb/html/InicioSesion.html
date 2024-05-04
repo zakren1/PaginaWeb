@@ -95,7 +95,7 @@
                 <div class="card-body">
                     <div class="formulario" style="align-items: center;">
                         <h1 class="flexbox-margin-auto">Login</h1>
-                        <form action="" class="was-validated">
+                        <form id="login-form" action="index.html" class="was-validated">
                             <div class="mb-3">
                                 <input type="email" class="form-control" placeholder="Correo Electronico" id="idemail" name="email" required>
                                 <div class="valid-feedback">Email válido</div>
@@ -105,12 +105,10 @@
                             <div class="mb-2">
                                 <input type="password" class="form-control" placeholder="Contraseña" id="idpassword" name="password" required style="margin-top: 10px;">
                                 <div class="valid-feedback">Contraseña válida</div>
-                                <div class="invalid-feedback">Ingrese contraseña</div>
+                                <div class="invalid-feedback">La contraseña debe tener al menos 5 caracteres</div>
                             </div>
 
-                            <button class="btn btn-primary" type="submit" style="margin-top: 10px;">
-                                <a href="index.html" style="text-decoration: none; color: white;">Iniciar Sesión</a>
-                            </button>
+                            <button class="btn btn-primary" type="submit" style="margin-top: 10px;">Iniciar Sesión</button>
 
                             <div class="mb-2"><a href="recuperarcontra.html">¿Olvidaste tu contraseña?</a></div>
 
@@ -214,7 +212,7 @@
         </div>
     </footer>
     <!--FIN FOOTER-->
-
+    <script src="../js/scriptiniciosesion.js"></script>
 </body>
 
 </html>

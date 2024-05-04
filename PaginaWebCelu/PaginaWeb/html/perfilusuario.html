@@ -77,7 +77,9 @@
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="../html/perfilusuario.html">Perfil</a></li>
                             <li><a class="dropdown-item" href="../html/pedidosuser.html">Mis pedidos</a></li>
-                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
                             <li><a class="dropdown-item" href="../html/InicioSesion.html">Iniciar sesión</a></li>
                             <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
                         </ul>
@@ -97,31 +99,43 @@
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <h4 class="text-right">Editar perfil</h4>
                     </div>
-                    <div class="row mt-2">
-                        <div class="col-md-6"><label class="labels readonly-label">Nombre</label><input type="text" class="form-control readonly-input"
-                                placeholder="Cristhofer" value="" readonly></div>
-                        <div class="col-md-6"><label class="labels readonly-label">Apellido</label><input type="text"
-                                class="form-control readonly-input" value="" placeholder="Álvarez" readonly></div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-12"><label class="labels readonly-label">Nombre de usuario</label><input type="text"
-                            class="form-control readonly-input" placeholder="CrisMj" value="" readonly></div>
-                        <div class="col-md-12"><label class="labels">Correo electrónico</label><input type="text"
-                                class="form-control" placeholder="crismj@gmail.com" value=""></div>
-                        <div class="col-md-12"><label class="labels">Número de teléfono</label><input type="text"
-                                class="form-control" placeholder="+569 7421 3224" value=""></div>
-                        <div class="col-md-12"><label class="labels">Región</label><input type="text"
-                                class="form-control" placeholder="Biobío" value=""></div>
-                        <div class="col-md-12"><label class="labels">Comuna</label><input type="text"
-                                class="form-control" placeholder="Concepción" value=""></div>
-                        <div class="col-md-12"><label class="labels">Dirección</label><input type="text"
-                                class="form-control" placeholder="San Martín 940" value=""></div>
-                        <div class="col-md-12"><label class="labels">N° de departamento (si aplica) </label><input type="text"
-                                class="form-control" placeholder="" value=""></div>
-                        
-                    </div>
-                    <div class="mt-4 text-center"><a href="../html/perfilusuario.html"><button class="btn btn-primary profile-button" type="button">Guardar
-                            Perfil</button></a></div>
+                    <form id="editarperfil-form" action="index.html">
+                        <div class="row mt-2">
+                            <div class="col-md-6"><label class="labels readonly-label">Nombre</label><input type="text"
+                                    class="form-control readonly-input" placeholder="Cristhofer" value="" readonly>
+                            </div>
+                            <div class="col-md-6"><label class="labels readonly-label">Apellido</label><input
+                                    type="text" class="form-control readonly-input" value="" placeholder="Álvarez"
+                                    readonly></div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-12"><label class="labels readonly-label">Nombre de usuario</label><input
+                                    type="text" class="form-control readonly-input" placeholder="CrisMj" value=""
+                                    readonly></div>
+                            <div class="col-md-12"><label class="form-label">Correo electrónico</label><input
+                                    type="email" class="form-control" id="idemail" placeholder="crismj@gmail.com"
+                                    value="" required></div>
+                            <div class="col-md-12"><label class="form-label">Número de teléfono</label><input
+                                    type="text" class="form-control" id="idtelefono" placeholder="9 7421 3224" value=""
+                                    minlength="9" maxlength="9" required></div>
+                            <div class="col-md-12"><label class="labels">Región</label><select class="form-select"
+                                    name="regiones" id="regiones">
+                                </select>
+                            </div>
+                            <div class="col-md-12"><label class="labels">Comuna</label><select class="form-select"
+                                    name="comunas" id="comunas">
+                                </select></div>
+                            <div class="col-md-12"><label class="form-label">Dirección</label><input type="text"
+                                    class="form-control" id="iddireccion" placeholder="San Martín 940" value=""
+                                    required></div>
+                            <div class="col-md-12"><label class="labels">N° de departamento (si aplica)</label><input
+                                    type="text" class="form-control" id="idnumdepto" placeholder="" value=""></div>
+
+                        </div>
+                        <div class="mt-4 text-center"><button class="btn btn-primary profile-button"
+                                type="submit">Guardar
+                                Perfil</button></div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -220,6 +234,8 @@
         </div>
     </footer>
     <!--FIN FOOTER-->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/scripteditarperfil.js"></script>
 </body>
 
 </html>
