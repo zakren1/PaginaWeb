@@ -38,51 +38,57 @@
                                 Productos
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="../html/editarproducto.html">Editar Productos</a></li>
-                                <li><a class="dropdown-item" href="../html/agregarproducto.html">Agregar productos</a></li>
-   
+                                <li><a class="dropdown-item" href="../html/editarproducto.html">Editar Productos</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../html/agregarproducto.html">Agregar productos</a>
+                                </li>
+
                             </ul>
                         </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="listadopedidos.html">Pedidos</a>
-                    </li>
-                </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="listadopedidos.html">Pedidos</a>
+                        </li>
+                    </ul>
             </div>
         </div>
     </nav>
 
     <div class="container">
         <h1 class="border-bottom mt-5">Editar Producto</h1>
-        <form id="product-form" class="mt-4">
+        <form id="editarproducto-form" class="mt-4" action="editarproducto.html">
             <div class="row mb-3">
                 <div class="col-md-3">
                     <label for="product-image" class="form-label"></label>
-                    <img src="../img/iphone15pro.jpg" alt="Imagen del Producto" class="img-fluid mb-3" id="product-image-preview">
+                    <img src="../img/iphone15pro.jpg" alt="Imagen del Producto" class="img-fluid mb-3"
+                        id="product-image-preview">
                     <input type="file" id="product-image" name="product-image" class="form-control">
                 </div>
                 <div class="col-md-9">
                     <div class="mb-3">
                         <label for="product-name" class="form-label">Nombre del Producto:</label>
-                        <input type="text" id="product-name" name="product-name" value="Iphone 15 Pro Max" class="form-control" disabled>
+                        <input type="text" id="product-name" name="product-name" value="Iphone 15 Pro Max"
+                            class="form-control" disabled>
                     </div>
                     <div class="mb-3">
                         <label for="product-price" class="form-label">Precio Actual:</label>
                         <div class="input-group">
                             <span class="input-group-text">$</span>
-                            <input type="number" id="product-price" name="product-price" value="1380000" class="form-control" disabled>
+                            <input type="number" id="product-price" name="product-price" value="1380000"
+                                class="form-control" disabled>
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="new-price" class="form-label">Nuevo Precio:</label>
                         <div class="input-group">
                             <span class="input-group-text">$</span>
-                            <input type="number" id="new-price" name="new-price" step="0.01" class="form-control" required>
+                            <input type="number" id="new-price" name="new-price" step="0.01" class="form-control"
+                                required>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="mb-3">
-                <a href="../html/editarproducto.html" class="btn btn-dark">Guardar Cambios</a>
+                <button type="submit" class="btn btn-primary">Agregar Producto</button>
                 <a href="../html/editarproducto.html" class="btn btn-dark">Volver</a>
             </div>
         </form>
@@ -95,7 +101,8 @@
             <div class="row text-white g-4">
                 <div class="col-md-6 col-lg-3">
                     <a class="text-uppercase text-decoration-none brand text-white" href="index.html">MobileMart</a>
-                    <p class="text-white text-opacity-50 mt-3">Tienda en línea especializada en la venta de teléfonos celulares y dispositivos móviles.</p>
+                    <p class="text-white text-opacity-50 mt-3">Tienda en línea especializada en la venta de teléfonos
+                        celulares y dispositivos móviles.</p>
                 </div>
 
                 <div class="col-md-6 col-lg-3">
@@ -178,5 +185,7 @@
         </div>
     </footer>
     <!--FIN FOOTER-->
+    <script src="../js/scripteditarprod.js"></script>
 </body>
+
 </html>
