@@ -39,6 +39,12 @@ document.addEventListener('DOMContentLoaded', function () {
             passwordInput.setCustomValidity('La contraseña debe tener al menos 5 caracteres.');
         } else {
             passwordInput.setCustomValidity('');
+            // Verificar si la contraseña coincide con la confirmación
+            if (confirmPasswordInput.value !== passwordInput.value) {
+                confirmPasswordInput.setCustomValidity('Las contraseñas no coinciden.');
+            } else {
+                confirmPasswordInput.setCustomValidity('');
+            }
         }
     });
 
