@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Obtener el formulario
-    const productForm = document.getElementById('agregarproducto-form');
+    const form = document.getElementById('agregarproducto-form');
 
     // Validacion del nombre
     const nameInput = document.getElementById('product-name');
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const specificationsInput = document.getElementById('product-specifications');
     specificationsInput.addEventListener('input', function () {
         if (specificationsInput.value.length < 15) {
-            specificationsInput.setCustomValidity('El nombre del producto debe tener al menos 15 caracteres.');
+            specificationsInput.setCustomValidity('Las especificaciones del producto deben tener al menos 15 caracteres.');
         } else {
             specificationsInput.setCustomValidity('');
         }
@@ -53,9 +53,12 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!form.checkValidity()) {
             event.preventDefault(); // Evitar que se envíe el formulario si no es válido
             event.stopPropagation(); // Detener la propagación del evento
-        }
+        } else {
+            // Marcar los campos como válidos/inválidos
+            form.classList.add('was-validated');
 
-        // Marcar los campos como válidos/inválidos
-        form.classList.add('was-validated');
+            // Mostrar la alerta
+            alert('¡El producto se ha agregado con éxito!');
+        }
     }, false);
 });

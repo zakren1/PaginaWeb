@@ -28,9 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!form.checkValidity()) {
             event.preventDefault(); // Evitar que se envíe el formulario si no es válido
             event.stopPropagation(); // Detener la propagación del evento
-        }
+        } else {
+            // Marcar los campos como válidos/inválidos
+            form.classList.add('was-validated');
 
-        // Marcar los campos como válidos/inválidos
-        form.classList.add('was-validated');
+            // Mostrar la alerta
+            alert('¡Sesion iniciada con éxito!');
+        }
     }, false);
 });
