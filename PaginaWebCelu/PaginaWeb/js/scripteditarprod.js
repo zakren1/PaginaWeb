@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Validacion del precio
     const priceInput = document.getElementById('new-price');
     priceInput.addEventListener('input', function () {
-        const price = parseFloat(priceInput.value);
-
-        if (isNaN(price) || price < 0) {
-            priceInput.setCustomValidity('El precio debe ser un valor numérico no negativo.');
+        let price = priceInput.value.trim(); // Eliminar espacios en blanco al principio y al final
+        // Verificar si el precio es un número no negativo y no comienza con cero
+        if (!/^\d+(\.\d+)?$/.test(price) || parseFloat(price) <= 0 || price.startsWith('0')) {
+            priceInput.setCustomValidity('El precio debe ser un valor numérico no negativo y no puede empezar con cero.');
         } else {
             priceInput.setCustomValidity('');
         }
